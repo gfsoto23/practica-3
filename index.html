@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página en GitHub Pages</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            /* Degradado en tonos lilas */
+            background: linear-gradient(135deg, #a77bff, #e0b0ff);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: #fdfdfd;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #444;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff6fa8;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff4f90;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: white;
+            font-size: 0.9rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        /* Estilos para la nueva sección "Acerca de Mí" */
+        .about-me {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-align: center; /* Centrar el texto */
+        }
+
+        .about-me h2 {
+            color: #444;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .about-me p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Estilos para el carrusel de imágenes */
+        .carousel-container {
+            overflow-x: auto; /* Permite el desplazamiento horizontal */
+            white-space: nowrap; /* Evita que las imágenes salten de línea */
+            padding-bottom: 15px; /* Espacio para la barra de desplazamiento */
+            -webkit-overflow-scrolling: touch; /* Desplazamiento suave en iOS */
+            scrollbar-width: thin; /* Estilo de barra de desplazamiento Firefox */
+            scrollbar-color: #e0b0ff #f1f1f1; /* Color de la barra de desplazamiento Firefox */
+        }
+
+        /* Estilo de la barra de desplazamiento para navegadores basados en Webkit (Chrome, Safari) */
+        .carousel-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .carousel-container::-webkit-scrollbar-thumb {
+            background-color: #a77bff;
+            border-radius: 10px;
+        }
+
+        .carousel-container::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .carousel-item {
+            display: inline-block; /* Permite que los elementos estén en la misma línea */
+            width: 250px; /* Ancho fijo para cada imagen */
+            height: 250px; /* Alto fijo para cada imagen */
+            margin-right: 15px;
+            border-radius: 10px;
+            overflow: hidden; /* Oculta partes de la imagen si se desborda */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .carousel-item:last-child {
+            margin-right: 0;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Recorta la imagen para que cubra el espacio */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a mi Página Web</h1>
+    </header>
+    <div class="container">
+        <div class="about-me">
+            <h2>🧶 Acerca de Mí</h2>
+            <p>Hola mi nombre es Genesis una chica con alma de señora a quien le gusta tejer, actualmente llevo 4 años haciendo tejido y sinceramente con el tiempo vaya que eh mejorado, aqui te dejo algunas de mis creaciones, gracias &lt;3 </p>
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img src="https://image.pollinations.ai/prompt/Image%201" alt="Creación de tejido 1: Appa">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image.pollinations.ai/prompt/Image%202" alt="Creación de tejido 2: Cerezas">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image.pollinations.ai/prompt/Image%203" alt="Creación de tejido 3: Chimuelo">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image.pollinations.ai/prompt/Image%204" alt="Creación de tejido 4: Corazón granada">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        Espero te haya gustado, bonita tarde <3
+    </footer>
+</body>
+</html>
